@@ -1,7 +1,7 @@
 # **Criando um projeto com o React**
 
 - Copie o endereço da pasta que será utilizada. `C:\react`
-- Clique em `Win + R` e digite `cmd` para entrar no promp de comando
+- Clique em `Win + R` e digite `cmd` para entrar no prompt de comando
 - No cmd digite `cd C:\react`
 - Após entrar na pasta que será utilizada, no terminal digite: `npm create vite@latest "nome do projeto" -- --template reat`
 - Depois da confirmação de que deu certo, digite `cd "nome do projeto"`
