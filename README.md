@@ -24,7 +24,7 @@ import React, { component } from 'react';
 
 class MeuComponente extends Component {
   render() {
-    return <h1>Hello Word</h1>
+    return <h1>Hello World!</h1>
   }
 }
 
@@ -35,7 +35,7 @@ export default MeuComponente;
 
 ```javascript
 function MeuComponente() {
-  return <h1>Hello Word</h1>
+  return <h1>Hello World!</h1>
 }
 
 export default MeuComponente;
