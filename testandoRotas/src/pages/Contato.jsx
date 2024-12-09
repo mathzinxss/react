@@ -1,4 +1,4 @@
-import Menu from "./Menu";
+import Menu from './Menu';
 
 function Contato() {
     return (
@@ -9,4 +9,4 @@ function Contato() {
     )
 }
 
-export default Contato
+export default Contato;

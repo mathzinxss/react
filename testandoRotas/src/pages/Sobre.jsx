@@ -1,4 +1,4 @@
-import Menu from "./Menu";
+import Menu from './Menu';
 
 function Sobre() {
     return (
@@ -9,4 +9,4 @@ function Sobre() {
     )
 }
 
-export default Sobre 
+export default Sobre;

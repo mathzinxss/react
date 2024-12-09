@@ -1,9 +1,11 @@
 function Menu() {
-    return (
+    return(
         <div>
-            <a href="/">Home</a>
-            <a href="/">Sobre</a>
-            <a href="/">Contato</a>
+            <a href="/">Home</a>&nbsp;&nbsp;&nbsp;
+            <a href="/Sobre">Sobre</a>&nbsp;&nbsp;&nbsp;
+            <a href="/Contato">Contato</a>
         </div>
     )
 }
+
+export default Menu;
