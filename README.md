@@ -37,7 +37,11 @@ function App() {
 ```
 Dentro do `Route` está nossas páginas. Criei três arquivos e um Menu com ligação no meu `App.jsx`.
 
----
+## **Bibliotecas React**
+
+#### **React Spring** (Animações)
+#### **ReCharts** (Guia/Tutorial do site)
+#### **React JoyRide** (Gráficos)
 
 ## **Componentes**
 
