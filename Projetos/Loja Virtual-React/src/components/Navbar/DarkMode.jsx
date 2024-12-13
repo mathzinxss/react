@@ -25,13 +25,13 @@ const DarkMode = () => {
                 src={LightButton}
                 alt=""
                 onClick={() => setTheme(theme == "light" ? "dark" : "light")}
-                className={`w-6 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0, 0, 0, 0.1)] transition-all duration-300 absolute right-0 z-10 ${theme == "dark" ? "opacity-0" : "opacity-100"}` } />
+                className={`w-14 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0, 0, 0, 0.1)] transition-all duration-300 absolute right-0 z-10 ${theme == "dark" ? "opacity-0" : "opacity-100"}` } />
 
             <img 
                 src={DarkButton} 
                 alt=""
                 onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
-                className= {`w-5 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0, 0, 0, 0.1)] transition-all duration-300 ${theme == "light" ? "opacity-0" : "opacity-100"} `} />
+                className= {`w-14 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0, 0, 0, 0.1)] transition-all duration-300 ${theme == "light" ? "opacity-0" : "opacity-100"} `} />
         </div>
     )
 }
