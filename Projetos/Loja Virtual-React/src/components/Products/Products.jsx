@@ -1,36 +1,83 @@
-import React from 'react'
+import React from 'react';
+import Img1 from "../../assets/produtos/produto1.jpg";
+import Img2 from "../../assets/produtos/produto2.jpg";
+import Img3 from "../../assets/produtos/produto3.jpg";
+import Img4 from "../../assets/produtos/produto4.jpg";
 
 const ProductsData = [
-    
-]
+    {
+        id: 1,
+        img: Img1,
+        title: "Luminária",
+        rating: 5.0,
+        color: "white",
+        aosDelay: "0",
+    },
+    {
+        id: 2,
+        img: Img2,
+        title: "Quadros",
+        rating: 5.0,
+        author: "red",
+        aosDelay: "200",
+    },
+    {
+        id: 3,
+        img: Img3,
+        title: "Caixas de presentes",
+        rating: 4.9,
+        author: "brown",
+        aosDelay: "400",
+    },
+    {
+        id: 4,
+        img: Img4,
+        title: "Buquês",
+        rating: 5.0,
+        author: "Yellow",
+        aosDelay: "0",
+    },
+];
 
 const Products = () => {
     return (
-        <div className='mt-14 mb-12'>
-            <div className='container'>
+        <div className="mt-14 mb-12">
+            <div className="container mx-auto px-4">
                 {/* Seção de cabeçalho */}
-                <div className='text-center mb-10 max-w-[600px] mx-auto'>
-                    <p className='text-sm text-secondary'>Produtos mais vendidos para você</p>
-                    <h1 className='text-3xl font-bold'>Produtos</h1>
-                    <p className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat earum deserunt quasi! Nam, tenetur exercitationem magnam voluptate libero eum commodi quisquam accusamus consequuntur recusandae facere. Quos dignissimos explicabo quia quasi!</p>
+                <div className="text-center mb-10 max-w-[600px] mx-auto">
+                    <p className="text-sm text-secondary">
+                        Produtos mais vendidos para você
+                    </p>
+                    <h1 className="text-3xl font-bold">Produtos</h1>
+                    <p className="text-xs text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repellat earum deserunt quasi! Nam, tenetur exercitationem
+                        magnam voluptate libero eum commodi quisquam accusamus
+                        consequuntur recusandae facere. Quos dignissimos explicabo
+                        quia quasi!
+                    </p>
                 </div>
-                {/* Seção do corpo  */}
+                {/* Seção do corpo */}
 
-                <div>
-                    <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5'>
-                        {/* Seção de cartão */}
-                            {ProductsData.map((data) => (
-                                <div>
-
-                                </div>
-                            ))}
-
-                    </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                    {/* Seção de cartão */}
+                    {ProductsData.map((data) => (
+                        <div
+                            key={data.id}
+                            className="flex flex-col items-center text-center"
+                        >
+                            <img
+                                src={data.img}
+                                alt={data.title}
+                                className="h-[200px] w-[200px] object-cover rounded-md"
+                            />
+                            <h3 className="font-semibold mt-3">{data.title}</h3>
+                        </div>
+                    ))}
                 </div>
-
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Products
+export default Products;
