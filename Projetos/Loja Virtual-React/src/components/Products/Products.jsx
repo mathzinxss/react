@@ -1,5 +1,9 @@
 import React from 'react'
 
+const ProductsData = [
+    
+]
+
 const Products = () => {
     return (
         <div className='mt-14 mb-12'>
@@ -15,7 +19,11 @@ const Products = () => {
                 <div>
                     <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5'>
                         {/* Seção de cartão */}
-                            
+                            {ProductsData.map((data) => (
+                                <div>
+
+                                </div>
+                            ))}
 
                     </div>
                 </div>
