@@ -3,6 +3,8 @@ import Img1 from "../../assets/produtos/produto1.jpg";
 import Img2 from "../../assets/produtos/produto2.jpg";
 import Img3 from "../../assets/produtos/produto3.jpg";
 import Img4 from "../../assets/produtos/produto4.jpg";
+import { FaStar } from 'react-icons/fa';
+
 
 const ProductsData = [
     {
@@ -18,7 +20,7 @@ const ProductsData = [
         img: Img2,
         title: "Quadros",
         rating: 5.0,
-        author: "red",
+        color: "red",
         aosDelay: "200",
     },
     {
@@ -26,7 +28,7 @@ const ProductsData = [
         img: Img3,
         title: "Caixas de presentes",
         rating: 4.9,
-        author: "brown",
+        color: "brown",
         aosDelay: "400",
     },
     {
@@ -34,7 +36,7 @@ const ProductsData = [
         img: Img4,
         title: "Buquês",
         rating: 5.0,
-        author: "Yellow",
+        color: "Yellow",
         aosDelay: "0",
     },
 ];
@@ -63,7 +65,9 @@ const Products = () => {
                     {/* Seção de cartão */}
                     {ProductsData.map((data) => (
                         <div
-                                      key={data.id}
+                            data-aos="fade-up"
+                            data-aos-delay={data.aosDelay}
+                            key={data.id}
                             className="flex flex-col items-center text-center"
                         >
                             <img
