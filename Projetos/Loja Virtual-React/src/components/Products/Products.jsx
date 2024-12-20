@@ -63,8 +63,8 @@ const Products = () => {
                     {/* Seção de cartão */}
                     {ProductsData.map((data) => (
                         <div
-                            key={data.id}
-                            className="space-y-3 flex flex-col items-center text-center"
+                                      key={data.id}
+                            className="flex flex-col items-center text-center"
                         >
                             <img
                                 src={data.img}
