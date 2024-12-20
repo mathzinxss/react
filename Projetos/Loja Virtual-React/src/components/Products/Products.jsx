@@ -64,7 +64,7 @@ const Products = () => {
                     {ProductsData.map((data) => (
                         <div
                             key={data.id}
-                            className="flex flex-col items-center text-center"
+                            className="space-y-3 flex flex-col items-center text-center"
                         >
                             <img
                                 src={data.img}
@@ -72,6 +72,11 @@ const Products = () => {
                                 className="h-[200px] w-[200px] object-cover rounded-md"
                             />
                             <h3 className="font-semibold mt-3">{data.title}</h3>
+                            <p className='text-sm text-gray-600'>{data.color}</p>
+                            <div className='flex items-center gap-1'>
+                                <FaStar className="text-yellow-400"/>
+                                <span>{data.rating}</span>
+                            </div>
                         </div>
                     ))}
                 </div>
