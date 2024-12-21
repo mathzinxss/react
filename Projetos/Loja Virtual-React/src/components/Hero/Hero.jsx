@@ -61,7 +61,11 @@ const Hero = () => {
                                         data-aos-duration = "500"
                                         data-aos-once="true"
                                         className='text-5xl sm:text-6xl lg:text-7xl font-bold'> {data.title} </h1>
-                                    <p className='text-sm'>{data.description}</p>
+                                        <p 
+                                        data-aos = "zoom-out"
+                                        data-aos-duration = "500"
+                                        data-aos-once="true"
+                                        className='text-sm'>{data.description}</p>
                                     <div>
                                         <button 
                                             className='bg-gradient-to-r from-emerald-500 to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full'> Compre Agora </button>
