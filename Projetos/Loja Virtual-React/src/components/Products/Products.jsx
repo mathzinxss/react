@@ -3,7 +3,7 @@ import Img1 from "../../assets/produtos/produto1.jpg";
 import Img2 from "../../assets/produtos/produto2.jpg";
 import Img3 from "../../assets/produtos/produto3.jpg";
 import Img4 from "../../assets/produtos/produto4.jpg";
-import { FaStar } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa6';
 
 
 const ProductsData = [
@@ -37,7 +37,7 @@ const ProductsData = [
         title: "Buquês",
         rating: 5.0,
         color: "Yellow",
-        aosDelay: "0",
+        aosDelay: "600",
     },
 ];
 
@@ -47,11 +47,11 @@ const Products = () => {
             <div className="container mx-auto px-4">
                 {/* Seção de cabeçalho */}
                 <div className="text-center mb-10 max-w-[600px] mx-auto">
-                    <p className="text-sm text-secondary">
+                    <p data-aos="fade-up" className="text-sm text-secondary">
                         Produtos mais vendidos para você
                     </p>
-                    <h1 className="text-3xl font-bold">Produtos</h1>
-                    <p className="text-xs text-gray-400">
+                    <h1 data-aos="fade-up" className="text-3xl font-bold">Produtos</h1>
+                    <p data-aos="fade-up" className="text-xs text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Repellat earum deserunt quasi! Nam, tenetur exercitationem
                         magnam voluptate libero eum commodi quisquam accusamus
