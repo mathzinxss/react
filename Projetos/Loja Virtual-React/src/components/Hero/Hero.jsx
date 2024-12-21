@@ -74,7 +74,7 @@ const Hero = () => {
                                 {/* Seção de imagem */}
                                 <div className='order-1 sm:order-2'>
                                     <div 
-                                        data-aos = "zoom-in"
+                                        data-aos = "zoom-out"
                                         data-aos-once="true"
                                         className='relative z-10' >
                                         <img 

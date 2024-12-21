@@ -68,7 +68,7 @@ const Products = () => {
                             data-aos="fade-up"
                             data-aos-delay={data.aosDelay}
                             key={data.id}
-                            className="flex flex-col items-center text-center"
+                            className="space-y-3 flex flex-col items-center text-center"
                         >
                             <img
                                 src={data.img}
